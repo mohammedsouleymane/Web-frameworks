@@ -1,5 +1,5 @@
 import { forEach } from 'lodash';
-import readline from 'readline'
+import * as readline from 'readline';
 const rl = readline.createInterface(process.stdin, process.stdout);
 import {
   Config,
