@@ -1,0 +1,14 @@
+<input type="text" placeholder="firstname" [(ngModel)]="firstName">
+<input type="text" placeholder="lastname" [(ngModel)]="lastName">
+<br>
+<input type="text" placeholder="street" [(ngModel)]="street">
+<input type="text" placeholder="number" [(ngModel)]="strnumber">
+<br>
+<input type="text" placeholder="city" [(ngModel)]="city">
+<br>
+<input type="button" value="Save" (click)="changeSave()">
+<ng-container *ngIf="saved">
+    <p> {{lastName}} {{firstName}}</p>
+    <p>{{street}} {{strnumber}}</p>
+    <p>{{city}}</p>
+</ng-container>

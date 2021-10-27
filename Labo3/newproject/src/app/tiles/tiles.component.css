@@ -1,0 +1,14 @@
+main {
+    width: 85%;
+    float: right;
+    margin-bottom: 28px;
+}
+
+#tile4 {
+    background-color: #F5F5F5;
+    color: gray;
+}
+
+app-tile5 {
+    font-size: 19px
+}

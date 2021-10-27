@@ -24,6 +24,7 @@ class GameDungeon implements IDungeon {
     this.dungeon = createDungeon(seed, config);
     this.objects = createObjects(this.dungeon, seed);
   }
+  
   print(): void {
     for (let i = 0; i < this.dungeon.grid.length; i++) {
 
@@ -44,13 +45,14 @@ class GameDungeon implements IDungeon {
   rl.close()
   }
   getTileAt(x: number, y: number): GameTile | undefined {
-    return this.dungeon.grid[x][y];
+    return this.dungeon.grid[y][x];
   }
   getObjectAt(x: number, y: number): GameObject | undefined {
     let object: any = '';
     this.objects.forEach((element) => {
       if (element.position.x == x && element.position.y == y) object = element;
     });
+    
     return object;
   }
 }

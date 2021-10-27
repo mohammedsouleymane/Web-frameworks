@@ -1,0 +1,9 @@
+<tr *ngFor="let i of index">
+    <td>{{degrees[i]}} </td>
+    <td> {{location[i]}}</td>
+    <td *ngIf="degrees[i] == 0">Kans op gladheid”</td>
+    <td *ngIf="degrees[i] > 1 && degrees[i] < 3">Kans op sneeuw</td>
+    <td *ngIf="degrees[i] > 17">Zacht weertje</td>
+    <td *ngIf="degrees[i] > 17"><img src="https://openweathermap.org/img/w/01d.png" alt=""></td>
+    <td *ngIf="degrees[i] > 1 &&  degrees[i] < 3"><img src="https://openweathermap.org/img/w/04d.png" alt=""></td>
+</tr>

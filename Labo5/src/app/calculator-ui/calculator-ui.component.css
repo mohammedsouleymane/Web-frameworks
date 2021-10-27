@@ -1,0 +1,7 @@
+button {
+    display: inline-block;
+    background-color: #1A75D7;
+    padding: 2%;
+    margin: 2px;
+    font-size: 20px;
+}

@@ -1,0 +1,6 @@
+<input type="text" [value]="text">
+<ng-container *ngFor="let item of numbers; let i = index">
+    <br *ngIf="i%4 == 0">
+    <button (click)="changeText(item)">{{item}}</button>
+
+</ng-container>

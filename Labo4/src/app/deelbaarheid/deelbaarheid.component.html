@@ -1,0 +1,9 @@
+<tr>
+    <th>Rang</th>
+    <th>Getal</th>
+</tr>
+<tr *ngFor="let num of arr">
+    <td *ngIf="num % 2 == 0">{{getIndex(num) + 1}}</td>
+    <td *ngIf="num % 2 == 0">{{num}}</td>
+
+</tr>

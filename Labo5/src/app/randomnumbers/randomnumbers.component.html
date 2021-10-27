@@ -1,0 +1,9 @@
+<p>{{number}}</p>
+<label>Min</label>
+<input type="number" [(ngModel)]="min">
+<br>
+<label>Max</label>
+<input type="number" [(ngModel)]="max">
+<br>
+<input type="button" *ngIf="!start" value="start" (click)="changeState()">
+<input type="button" *ngIf="start" value="stop" (click)="changeState()">

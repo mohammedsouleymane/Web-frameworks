@@ -1,0 +1,9 @@
+<h3>Todo lijstje</h3>
+<ol>
+    <li *ngFor="let item of list; let i = index">{{item}} <input type="button" (click)="removeItem(i)" value="X"></li>
+</ol>
+
+<div>
+    <input #text type="text">
+    <input type="button" value="Voeg toe" [disabled]="text.value == ''" (click)="addItem(text.value)">
+</div>

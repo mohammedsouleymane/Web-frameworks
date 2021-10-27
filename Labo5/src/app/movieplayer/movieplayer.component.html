@@ -1,0 +1,14 @@
+<video #vid [width]="width" [height]="height" controls>
+    <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/ogg">
+</video>
+<br>
+<select #select name="" id="" (change)="setDimensions(select.selectedOptions[0].text)">
+    <option>426x240</option>
+    <option>640x360</option>
+    <option>854x480</option>
+    <option>1280x720</option>
+    <option>1920x1080</option>
+  
+</select>
+<input type="button" value="play" (click)="vid.play()" [disabled]="!vid.paused">
+<input type="button" value="pause" [disabled]="vid.paused" (click)="vid.pause()">

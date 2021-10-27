@@ -1,0 +1,6 @@
+<ul *ngFor="let car of cars">
+    <li>{{car.name}}</li>
+    <ul *ngFor="let model of car.models">
+        <li>{{model}}</li>
+    </ul>
+</ul>
