@@ -1,0 +1,6 @@
+<app-navbar></app-navbar>
+<div *ngFor="let i of pokemons">
+    <div class="box">
+        <a href="pokemon/{{i.id}}">{{i.name}}</a>
+    </div>
+</div>
