@@ -1,0 +1,10 @@
+<h1>
+    {{ title }}</h1>
+
+<agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+</agm-map>
+
+<div *ngFor="let location of locations; index as i">
+    <button (click)="change(i)">{{location}}</button>
+</div>
