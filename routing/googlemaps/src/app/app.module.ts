@@ -13,7 +13,7 @@ import { LocationComponent } from './location/location.component';
   ],
   imports: [
     BrowserModule,
-    AgmCoreModule.forRoot({apiKey:"AIzaSyCFWW5JzI3JZv-GbajGGZK9xRkeG-vfPtc"}),
+    AgmCoreModule.forRoot({apiKey:""}),
     RouterModule.forRoot([
       {path: "locations", component: LocationsComponent},
       {path:"maps/:location", component: LocationComponent},
