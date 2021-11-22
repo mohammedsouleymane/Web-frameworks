@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import pokemons from  '../../assets/pokedex.json'
+import { PokedexService } from '../pokedex.service';
 @Component({
   selector: 'app-list',
   templateUrl: './list.component.html',
@@ -7,10 +7,20 @@ import pokemons from  '../../assets/pokedex.json'
 })
 export class ListComponent implements OnInit {
 
-  pokemons = pokemons;
-  constructor() { }
 
+  constructor(private service: PokedexService) { }
+  pokemons = this.service.pokemons;
   ngOnInit(): void {
+    
   }
 
+  setFavorite(id:string)
+  {
+
+    this.service.favorites[parseInt(id) - 1] =  !this.service.favorites[parseInt(id) - 1] 
+  }
+  getFavorite(id:string)
+  {
+    return this.service.favorites[parseInt(id) - 1] 
+  }
 }

@@ -1,3 +1,8 @@
 .card {
     width: 25%;
 }
+
+#name {
+    display: inline;
+    margin-right: 5%;
+}

@@ -9,7 +9,9 @@
                 </figure>
             </div>
             <div class="media-content ">
-                <p class="title is-4 ">{{pokemon.name}}</p>
+                <p class="title is-4 " id="name">{{pokemon.name}}</p>
+                <span class="tag is-info" *ngIf="checkFavorite()">Favorite</span>
+                <br>
                 <p class="subtitle is-6 ">#{{pokemon.id}}</p>
             </div>
         </div>

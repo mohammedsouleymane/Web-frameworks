@@ -1,0 +1,3 @@
+<app-text-component [hidden]="Visibility"></app-text-component>
+<input type="button" value="hide" *ngIf="!Visibility" (click)="Visibility = true">
+<input type="button" value="show" *ngIf="Visibility" (click)="Visibility = false">
