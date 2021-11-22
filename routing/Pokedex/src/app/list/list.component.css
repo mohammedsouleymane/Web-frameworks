@@ -4,6 +4,14 @@
     margin-right: auto;
 }
 
+button {
+    float: right
+}
+
+#colored {
+    color: orange;
+}
+
 input {
     float: right;
 }

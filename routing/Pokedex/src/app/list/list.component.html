@@ -2,8 +2,9 @@
 <div *ngFor="let i of pokemons">
     <div class="box">
         <a [routerLink]="[i.id]">{{i.name}}</a>
-
-
-        <input type="checkbox" [checked]="getFavorite(i.id)" (change)="setFavorite(i.id)">
+        <button class="button is-primary" (click)="setFavorite(i.id)">
+            <i class="fas fa-star" *ngIf="!getFavorite(i.id)"></i>
+            <i class="fas fa-star" id="colored"*ngIf="getFavorite(i.id)"></i>
+        </button>
     </div>
 </div>
