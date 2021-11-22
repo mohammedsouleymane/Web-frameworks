@@ -21,7 +21,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     RouterModule.forRoot([
       {path:"home",component: HomeComponent},
       {path:"pokemons",component: ListComponent},
-      {path:"pokemon/:id",component: PokemonComponent},
+      {path:"pokemons/:id",component: PokemonComponent},
       {path:"", component: HomeComponent}
     ])
   ],
