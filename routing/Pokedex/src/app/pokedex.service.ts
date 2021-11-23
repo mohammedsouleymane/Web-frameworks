@@ -6,12 +6,8 @@ import pokemons from  '../assets/pokedex.json'
 export class PokedexService {
 
   pokemons = pokemons
-  favorites:boolean[] = [];
-  constructor() { 
-    pokemons.forEach(element => {
-      this.favorites.push(false)
-    });
-  }
+  favorites = Array(pokemons.length).fill(false);
+  constructor() {}
   getPokemonId(id:number)
   {
     return pokemons[id-1];

@@ -11,7 +11,6 @@ export class ListComponent implements OnInit {
   constructor(private service: PokedexService) { }
   pokemons = this.service.pokemons;
   ngOnInit(): void {
-    
   }
 
   setFavorite(id:string)
