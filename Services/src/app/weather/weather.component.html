@@ -1,0 +1,17 @@
+<input class="input is-primary" type="text" placeholder="Antwerpen" #place>
+<button class="button is-primary" (click)="setPlace(place.value)">Show weather</button>
+<br>
+<div class="box">
+    <div>
+        <img [src]="Icon" alt="">
+        <H2>{{location.name}}</H2>
+        <strong>({{location.weather[0].description}})</strong>
+    </div>
+    <br>
+    <br>
+    <br><br><br>
+    <i class="fas fa-temperature-low"></i><span>{{Temp}}</span>
+    <br>
+    <i class="fas fa-sun"></i><span>{{Sunrise}}</span>
+    <i class="fas fa-moon"></i><span>{{Sunset}}</span>
+</div>

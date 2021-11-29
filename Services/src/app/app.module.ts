@@ -8,6 +8,9 @@ import { WelcomeSelectComponentComponent } from './welcome-select-component/welc
 import { WelcomeComponent } from './welcome/welcome.component';
 import { TextComponentComponent } from './text-component/text-component.component';
 import { TextToggleComponentComponent } from './text-toggle-component/text-toggle-component.component';
+import { DelijnComponent } from './delijn/delijn.component';
+import { HttpClientModule } from '@angular/common/http';
+import { WeatherComponent } from './weather/weather.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { TextToggleComponentComponent } from './text-toggle-component/text-toggl
     WelcomeSelectComponentComponent,
     WelcomeComponent,
     TextComponentComponent,
-    TextToggleComponentComponent
+    TextToggleComponentComponent,
+    DelijnComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

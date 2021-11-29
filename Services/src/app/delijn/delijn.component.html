@@ -1,0 +1,19 @@
+<div class="table-container">
+    <table class="table is-bordered">
+        <thead class="table-background-color">
+            <tr>
+                <th>Lijn</th>
+                <th>Bestemming</th>
+                <th>Vertrek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of Bestemmingen">
+
+                <td>{{i.lijnNummerPubliek}}</td>
+                <td>{{i.bestemming}}</td>
+                <td>{{i.vertrekTijd}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

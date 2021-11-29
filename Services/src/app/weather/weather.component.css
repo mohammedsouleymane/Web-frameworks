@@ -1,0 +1,22 @@
+input {
+    display: inline;
+    width: 25%;
+}
+
+img {
+    float: left;
+}
+
+h2 {
+    width: 20%;
+    display: inline;
+    margin-top: 3%;
+}
+
+span {
+    margin-right: 1%;
+}
+
+.box {
+    width: 35%;
+}
