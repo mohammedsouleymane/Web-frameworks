@@ -1,0 +1,17 @@
+<angular-editor [placeholder]="'Enter text here...'" [(ngModel)]="htmlContent"></angular-editor>
+
+<div class="box is-light">
+    <input type="date" #date>
+    <button *ngIf="!update" class="button is-primary" id="post" (click)="PostDay(date.value)">Post</button>
+    <button *ngIf="update" class="button is-success" id="update" (click)="UpdateDay(date.value)">Update</button>
+    <button *ngIf="update" class="button is-danger" id="cancel" (click)="update = false">Cancel</button>
+</div>
+
+
+<div *ngFor="let day of posts " class="box ">
+    <button class="button" (click)="ChangeContent(day.text, day._id)"><i class="fas fa-edit "></i></button>
+    <button class="button" (click)="DeleteDay(day._id) "><i class="fas fa-times "></i></button>
+    <p [innerHtml]="day.text "></p>
+    <br>
+    <p [textContent]="ConvertDate(day.date) "></p>
+</div>

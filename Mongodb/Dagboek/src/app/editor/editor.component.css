@@ -1,0 +1,23 @@
+#post {
+    margin-left: 5%;
+    width: 80%;
+}
+
+#update,
+#cancel {
+    display: inline;
+    width: 40%;
+}
+
+body {
+    background-color: grey;
+}
+
+.button {
+    float: right;
+    display: inline;
+    width: 4%;
+    margin: 0;
+    height: 3%;
+    width: 3%;
+}
