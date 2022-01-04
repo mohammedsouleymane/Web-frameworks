@@ -1,18 +1,4 @@
 [{
-        "id": "1",
-        "species_id": "1",
-        "height": "7",
-        "weight": "69",
-        "base_experience": "64",
-        "order": "1",
-        "is_default": "1",
-        "name": "bulbasaur",
-        "sprites": {
-            "normal": "http://img.pokemondb.net/sprites/black-white/normal/bulbasaur.png",
-            "animated": "http://img.pokemondb.net/sprites/black-white/anim/normal/bulbasaur.gif"
-        }
-    },
-    {
         "id": "2",
         "species_id": "2",
         "height": "10",
@@ -24,6 +10,20 @@
         "sprites": {
             "normal": "http://img.pokemondb.net/sprites/black-white/normal/ivysaur.png",
             "animated": "http://img.pokemondb.net/sprites/black-white/anim/normal/ivysaur.gif"
+        }
+    },
+    {
+        "id": "1",
+        "species_id": "1",
+        "height": "7",
+        "weight": "69",
+        "base_experience": "64",
+        "order": "1",
+        "is_default": "1",
+        "name": "bulbasaur",
+        "sprites": {
+            "normal": "http://img.pokemondb.net/sprites/black-white/normal/bulbasaur.png",
+            "animated": "http://img.pokemondb.net/sprites/black-white/anim/normal/bulbasaur.gif"
         }
     },
     {

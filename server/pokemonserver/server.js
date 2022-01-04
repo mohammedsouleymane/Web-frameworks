@@ -3,9 +3,9 @@ const app = express()
 const path = require('path')
 app.use(express.static('public'))
 app.use(express.json())
-app.use(express.kurlencoded({ extended: false }))
+app.use(express.urlencoded({ extended: false }))
 differnce = 1
-pokemons = require("./pokedex.json")
+pokemons = require("./pokedex.json").sort((a, b) => parseFloat(a.id) - parseFloat(b.id));
 app.get("/", (req, res) => {
     res.send(pokemons)
 })
