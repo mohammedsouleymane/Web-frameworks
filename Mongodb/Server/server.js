@@ -47,9 +47,10 @@ app.post("/posts", (req, res) => {
 app.delete("/posts/:id", (req, res) => {
     var key = { "_id": mongo.ObjectId(req.params.id) }
     db.collection("journal").deleteOne(key, function(err) {
-        if (!err)
+        if (!err) {
             res.status(204)
-        else
+            res.send()
+        } else
             res.json(err)
     })
 })
