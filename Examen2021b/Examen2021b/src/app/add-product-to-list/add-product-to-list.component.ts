@@ -9,8 +9,8 @@ import { DataService } from '../Services/data.service';
 export class AddProductToListComponent implements OnInit {
 
   constructor(private service: DataService) {}
-  products = this.service.products
   showNotification = false
+  get products(){return this.service.products;}
   Add(id:number, amount:number)
   {
     if(this.service.shoppinglist.find(x => x.id == id))
