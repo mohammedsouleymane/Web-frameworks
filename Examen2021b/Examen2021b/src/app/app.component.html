@@ -1,0 +1,20 @@
+<!-- De 'columns' zijn Bulma classes die ervoor zorgen dat het scherm in kolommen wordt opgedeeld  -->
+<h1 class="title is-4">Shopping list</h1>
+<div class="columns">
+    <div class="column"></div>
+    <div class="column">
+        <button class="button is-light" [routerLink]="'add'" [routerLinkActive]="['is-dark']">Ingeven</button>
+        <button class="button is-light" [routerLink]="'summary'" [routerLinkActive]="['is-dark']">Overzicht</button>
+    </div>
+    <div class="column"></div>
+</div>
+<div class="columns">
+    <div class="column">
+    </div>
+    <div class="column">
+        <!-- Deze 2 componenten zijn reeds aangemaakt, uiteraard moet je er nog voor zorgen dat er maar 1 tegelijk getoond wordt (zie opgave)-->
+        <router-outlet></router-outlet>
+    </div>
+    <div class="column">
+    </div>
+</div>
