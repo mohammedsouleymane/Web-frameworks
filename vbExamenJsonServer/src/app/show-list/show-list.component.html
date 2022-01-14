@@ -1,0 +1,28 @@
+Overzicht
+<div *ngIf="shoppinglist.length > 0">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Naam</th>
+                <th>Aantal</th>
+                <th>Prijs</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of shoppinglist" (mouseover)="btn.hidden = false" (mouseout)="btn.hidden = true">
+                <td>{{product.Name}}</td>
+                <td>{{product.Amount}}</td>
+                <td>€{{(product.Price * product.Amount).toFixed(1)}}</td>
+                <td><button #btn (click)="Remove(product.id)" [hidden]=true>X</button> </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="label">Totaal prijs (in €)</div>
+    <div class="field">
+        <input type="text" readonly [value]="total">
+    </div>
+</div>
+
+<div *ngIf="shoppinglist.length == 0">
+    Het lijstje is nog leeg
+</div>
