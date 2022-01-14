@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import * as data from '../../../Data.json'
+import {Products} from '../../../Data.json'
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
 
-  products = data.Products
+  products = Products
   shoppinglist = []
   constructor() { }
 }
