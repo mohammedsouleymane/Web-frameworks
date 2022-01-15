@@ -19,9 +19,8 @@ ngOnInit(): void {
   this.route.paramMap.subscribe(params => {
     let id = params.get("id")!;
     this.id = parseInt(id);
-    this.pokemon = this.service.getPokemonId(this.id);
+    this.pokemon = this.service.pokemons[this.id - 1]
     this.checkFavorite = this.service.favorites[this.id - 1]
-    console.log(this.service.favorites)
   })
 }
 

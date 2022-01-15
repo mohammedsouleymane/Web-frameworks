@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { PersoonsgegevensComponent } from './persoonsgegevens/persoonsgegevens.component';
 import { RandomnumbersComponent } from './randomnumbers/randomnumbers.component';
 import { RouterModule } from '@angular/router';
+import { MinmaxComponent } from './minmax/minmax.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { RouterModule } from '@angular/router';
     MovieplayerComponent,
     CalculatorUiComponent,
     PersoonsgegevensComponent,
-    RandomnumbersComponent
+    RandomnumbersComponent,
+    MinmaxComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ import { RouterModule } from '@angular/router';
       {path:"movieplayer", component: MovieplayerComponent},
       {path:"todo", component: TodolistComponent},
       {path:"redbox", component: RedboxComponent},
+      {path:"minmax", component:MinmaxComponent},
       {path: "**", component: WelcomeComponent}
     ])
   ],

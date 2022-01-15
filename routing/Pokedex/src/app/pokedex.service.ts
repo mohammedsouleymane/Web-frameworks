@@ -8,9 +8,4 @@ export class PokedexService {
   pokemons = pokemons
   favorites = Array(pokemons.length).fill(false);
   constructor() {}
-  getPokemonId(id:number)
-  {
-    return pokemons[id-1];
-  }
-
 }
