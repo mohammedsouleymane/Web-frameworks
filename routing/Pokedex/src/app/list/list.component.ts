@@ -15,7 +15,6 @@ export class ListComponent implements OnInit {
 
   setFavorite(id:string)
   {
-
     this.service.favorites[parseInt(id) - 1] =  !this.service.favorites[parseInt(id) - 1] 
   }
   getFavorite(id:string)
