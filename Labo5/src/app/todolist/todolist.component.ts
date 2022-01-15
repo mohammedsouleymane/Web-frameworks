@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-todolist',
@@ -11,6 +11,8 @@ export class TodolistComponent implements OnInit {
     setInterval(() =>{},10);
   }
 
+  @Input() title = "Todo list"
+  @Input() length = -1
   list:string[] = []
   ngOnInit(): void {
   }
@@ -21,6 +23,7 @@ export class TodolistComponent implements OnInit {
   }
   addItem(item:string)
   {
-    this.list.push(item)
+    if(this.length > this.list.length )
+      this.list.push(item)
   }
 }

@@ -13,6 +13,7 @@ import { PersoonsgegevensComponent } from './persoonsgegevens/persoonsgegevens.c
 import { RandomnumbersComponent } from './randomnumbers/randomnumbers.component';
 import { RouterModule } from '@angular/router';
 import { MinmaxComponent } from './minmax/minmax.component';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MinmaxComponent } from './minmax/minmax.component';
     CalculatorUiComponent,
     PersoonsgegevensComponent,
     RandomnumbersComponent,
-    MinmaxComponent
+    MinmaxComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,7 @@ import { MinmaxComponent } from './minmax/minmax.component';
     RouterModule.forRoot([
       {path:"welcome", component: WelcomeComponent},
       {path:"movieplayer", component: MovieplayerComponent},
-      {path:"todo", component: TodolistComponent},
+      {path:"todo", component: TodoComponent},
       {path:"redbox", component: RedboxComponent},
       {path:"minmax", component:MinmaxComponent},
       {path: "**", component: WelcomeComponent}
