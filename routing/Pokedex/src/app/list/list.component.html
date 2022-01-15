@@ -3,8 +3,8 @@
     <div class="box">
         <a [routerLink]="[i.id]">{{i.name}}</a>
         <button class="button is-primary" (click)="setFavorite(i.id)">
-            <i class="fas fa-star" *ngIf="!getFavorite(i.id)"></i>
-            <i class="fas fa-star" id="colored"*ngIf="getFavorite(i.id)"></i>
+            <i class="fas fa-star" *ngIf="!i.isFavorite"></i>
+            <i class="fas fa-star" id="colored"*ngIf="i.isFavorite"></i>
         </button>
     </div>
 </div>

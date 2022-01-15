@@ -5,7 +5,23 @@ import pokemons from  '../assets/pokedex.json'
 })
 export class PokedexService {
 
-  pokemons = pokemons
-  favorites = Array(pokemons.length).fill(false);
+  pokemons: Pokemon[] = pokemons
   constructor() {}
+}
+
+interface Pokemon{
+  id: string,
+  species_id: string,
+  height: string,
+  weight: string,
+  base_experience: string,
+  order: string,
+  is_default: string,
+  name: string,
+  sprites: {
+    normal: string,
+    animated: string
+  },
+  isFavorite?: boolean
+
 }

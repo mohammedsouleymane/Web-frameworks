@@ -13,14 +13,12 @@ export class PokemonComponent implements OnInit {
   constructor(private route: ActivatedRoute, private service: PokedexService) { }
   id = 0
   pokemon = this.service.pokemons[this.id]
-  checkFavorite = false
   
 ngOnInit(): void {
   this.route.paramMap.subscribe(params => {
     let id = params.get("id")!;
     this.id = parseInt(id);
     this.pokemon = this.service.pokemons[this.id - 1]
-    this.checkFavorite = this.service.favorites[this.id - 1]
   })
 }
 
